@@ -1,3 +1,68 @@
 body {
-	background: blue;
+	background: beige;
+	background-image: url("wheat.jpg");
+
 }
+
+.chocolate_stout {
+	background-image: url("chocolate_stout.png");
+	width: 900px;
+	text-align: center;
+	color: white;
+}
+
+table {
+	border-radius: 15px;
+	padding: 3px;
+	margin: auto;
+	font-weight: bold;
+}
+
+h1 {
+	font-family: American Typewriter, Zapfino, Tahoma, Verdana;
+	font-weight: bold;
+	text-align:center;
+}
+
+h3, h4 {
+	font-family: American Typewriter, Verdana;
+	text-align: center;
+}
+
+img {
+	border: solid black 3px;
+	margin: auto;
+	width: 600px;
+	display: auto;
+	margin: 0 auto;
+}
+
+p {
+	text-align: center;
+	font-family: Verdana;
+}
+
+a:visited {
+	color: #2b4a37;
+}
+
+a {
+	font-weight: bold;
+}
+
+#recipe_table {
+	text-align: center;
+}
+
+
+#witbier {
+	width: 200px;
+	border: solid black 2px;
+}
+
+footer {
+	font-size: .7em;
+}
+
+
+
