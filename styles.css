@@ -80,7 +80,24 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  body {
+    body {
     width: 100%;
 	}
+    p { font-size: 1.2em;
+    }
 }
+ @media screen and (max-width: 600px) {
+ 	body {
+ 		width: 100%;
+ 	}
+ 	table {
+ 		width: 100%;
+ 		margin: auto;
+ 	}
+ 	p {
+ 		font-size: 1.2em;
+ 	}
+ 	li {
+ 		font-size: 1.2em;
+ 	}
+ }
