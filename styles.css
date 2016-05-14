@@ -1,9 +1,6 @@
 
-########
-
 h1 {
 	font-family: Tahoma, Verdana;
-	color: yellow;
 }
 
 h3 {
@@ -15,6 +12,7 @@ body {
 	margin-right: 140px;
 	font-size: 18px;
 	font-weight: bold;
+	text-align: center;
 }
 
 p {
