@@ -1,106 +1,3 @@
-div {
-	position: relative;
-	overflow: hidden;
-}
-
-#background_img {
-	background-image: url("wheat.jpg");
-	position: fixed;
-	/*background-attachment: fixed;*/
-	height: auto;
-	width: 100%;
-	opacity: 0.6;
-}
-
-
-.chocolate_stout {
-	background-image: url("chocolate_stout.png");
-	background-repeat: no-repeat;
-	background-position:center;
-	text-align: center;
-	color: white;
-}
-
-.chocolate_table {
-	border: 3px solid black;
-	border-radius: 15px;
-	padding: 3px;
-	margin: auto;
-	font-weight: bold;
-	background: none;
-}
-
-.beer_table {
-	border: 3px solid black;
-	border-radius: 15px;
-	padding: 3px;
-	margin: auto;
-	font-weight: bold;
-	background: orange;
-}
-
-.beer_h1 {
-	font-family: "American Typewriter", Zapfino, Tahoma, Verdana;
-	font-weight: bold;
-	text-align: center;
-}
-
-.beer_h3, .beer_h4 {
-	font-family: "American Typewriter", Verdana;
-	text-align: center;
-	padding-left:30px;
-	padding-right:30px;
-}
-
-.beer_img {
-	border: solid black 3px;
-	margin: auto;
-	width: 600px;
-	margin: 0 auto;
-}
-
-.beer_p {
-	text-align: center;
-	font-family: Verdana;
-	padding-left: 40px;
-	padding-right:40px;
-}
-
-.beer_a:visited {
-	color: #2b4a37;
-}
-
-.beer_a {
-	font-weight: bold;
-}
-
-#recipe_table {
-	text-align: center;
-}
-
-
-#witbier {
-	width: 200px;
-	border: solid black 2px;
-}
-
-.beer_footer {
-	font-size: .7em;
-}
-
-
-@media only screen and (max-width: 768px) {
- 	body {
- 		font-size: 1.2em;
- 	}
-
- 	table, thead, tbody, th, td, tr {
- 		display: block;
- 		margin: auto;
- 		text-align: center;
- 		font-size: 1.0em;
-}
-
 
 ########
 
@@ -125,14 +22,14 @@ p {
 }
 
 section {
-	color: lime;
+/*	color: lime;*/
 }
 
 .background {
-	background-image: url("beer.jpg");
+/*	background-image: url("beer.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: cover;
+	background-size: cover;*/
 }
 #first_paragraph {
 	border: 5px solid #484848;
@@ -149,12 +46,8 @@ section {
 	margin: auto;
 	background: none;
 }
-#div {
-	position: fixed;
-	top: 10px;
-	right: 10px;
 
-}
+
 
 #sidebar{
 	position: fixed;
