@@ -1,12 +1,17 @@
-body {
-	background: beige;
-	background-image: url("wheat.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: cover;
-	background-color: beige;
+div {
+	position: relative;
+	overflow: hidden;
 }
+
+#background_img {
+	background-image: url("wheat.jpg");
+	position: fixed;
+	/*background-attachment: fixed;*/
+	height: auto;
+	width: 100%;
+	opacity: 0.6;
+}
+
 
 .chocolate_stout {
 	background-image: url("chocolate_stout.png");
@@ -25,7 +30,7 @@ body {
 	background: none;
 }
 
-table {
+.beer_table {
 	border: 3px solid black;
 	border-radius: 15px;
 	padding: 3px;
@@ -34,38 +39,38 @@ table {
 	background: orange;
 }
 
-h1 {
+.beer_h1 {
 	font-family: "American Typewriter", Zapfino, Tahoma, Verdana;
 	font-weight: bold;
 	text-align: center;
 }
 
-h3, h4 {
+.beer_h3, .beer_h4 {
 	font-family: "American Typewriter", Verdana;
 	text-align: center;
 	padding-left:30px;
 	padding-right:30px;
 }
 
-img {
+.beer_img {
 	border: solid black 3px;
 	margin: auto;
 	width: 600px;
 	margin: 0 auto;
 }
 
-p {
+.beer_p {
 	text-align: center;
 	font-family: Verdana;
 	padding-left: 40px;
 	padding-right:40px;
 }
 
-a:visited {
+.beer_a:visited {
 	color: #2b4a37;
 }
 
-a {
+.beer_a {
 	font-weight: bold;
 }
 
@@ -79,7 +84,7 @@ a {
 	border: solid black 2px;
 }
 
-footer {
+.beer_footer {
 	font-size: .7em;
 }
 
@@ -94,16 +99,70 @@ footer {
  		margin: auto;
  		text-align: center;
  		font-size: 1.0em;
-/* 	}
- 	p {
- 		font-size: 1.2em;
- 	}
- 	li {
- 		font-size: 1.2em;
- 	}*/
- }
+}
 
- /*@media only screen and (max-width: 760px), (max-device-width: 1024px) and (min-device-width: 768px)
-table, thead, tbody, th, td, tr {
-    display: block;
-}*/
+
+########
+
+h1 {
+	font-family: Tahoma, Verdana;
+	color: yellow;
+}
+
+h3 {
+	color: #484848;
+}
+
+body {
+	margin-left: 140px;
+	margin-right: 140px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+p {
+	font-family: Helvetica, Georgia;
+}
+
+section {
+	color: lime;
+}
+
+.background {
+	background-image: url("beer.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+#first_paragraph {
+	border: 5px solid #484848;
+	border-radius: 15px;
+	padding: 40px;
+	margin: auto;
+	background: none;
+}
+
+.other_paragraph {
+	border: 3px solid #900000;
+	border-radius: 10px;
+	padding: 40px;
+	margin: auto;
+	background: none;
+}
+#div {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+
+}
+
+#sidebar{
+	position: fixed;
+	left: 0;
+	right: 0;
+	width: 100px;
+	border: 3px solid #900000;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+}
