@@ -1,109 +1,53 @@
-body {
-	background: beige;
-	background-image: url("wheat.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: cover;
-	background-color: beige;
-}
-
-.chocolate_stout {
-	background-image: url("chocolate_stout.png");
-	background-repeat: no-repeat;
-	background-position:center;
-	text-align: center;
-	color: white;
-}
-
-.chocolate_table {
-	border: 3px solid black;
-	border-radius: 15px;
-	padding: 3px;
-	margin: auto;
-	font-weight: bold;
-	background: none;
-}
-
-table {
-	border: 3px solid black;
-	border-radius: 15px;
-	padding: 3px;
-	margin: auto;
-	font-weight: bold;
-	background: orange;
-}
 
 h1 {
-	font-family: "American Typewriter", Zapfino, Tahoma, Verdana;
+	font-family: Tahoma, Verdana;
+}
+
+h3 {
+	color: #484848;
+}
+
+body {
+	margin-left: 140px;
+	margin-right: 140px;
+	font-size: 18px;
 	font-weight: bold;
 	text-align: center;
-}
-
-h3, h4 {
-	font-family: "American Typewriter", Verdana;
-	text-align: center;
-	padding-left:30px;
-	padding-right:30px;
-}
-
-img {
-	border: solid black 3px;
-	margin: auto;
-	width: 600px;
-	margin: 0 auto;
 }
 
 p {
-	text-align: center;
-	font-family: Verdana;
-	padding-left: 40px;
-	padding-right:40px;
+	font-family: Helvetica, Georgia;
 }
 
-a:visited {
-	color: #2b4a37;
+section {
+/*	color: lime;*/
 }
 
-a {
-	font-weight: bold;
-}
-
-#recipe_table {
-	text-align: center;
+.background {
+/*	background-image: url("beer.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;*/
 }
 
 
-#witbier {
-	width: 200px;
-	border: solid black 2px;
+.paragraph {
+	border: 5px solid #484848;
+	border-radius: 15px;
+	padding: 40px;
+	margin: 10px;
+	background: none;
 }
 
-footer {
-	font-size: .7em;
+
+
+#sidebar{
+	position: fixed;
+	left: 0;
+	right: 0;
+	width: 100px;
+	border: 3px solid #900000;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
 }
-
-
-@media only screen and (max-width: 768px) {
- 	body {
- 		font-size: 1.2em;
- 	}
-
- 	table, thead, tbody, th, td, tr {
- 		display: block;
- 		margin: auto;
- 		text-align: center;
- 		font-size: 1.0em;
-/* 	}
- 	p {
- 		font-size: 1.2em;
- 	}
- 	li {
- 		font-size: 1.2em;
- 	}*/
- }
-
- /*@media only screen and (max-width: 760px), (max-device-width: 1024px) and (min-device-width: 768px)
-table, thead, tbody, th, td, tr {
-    display: block;
-}*/

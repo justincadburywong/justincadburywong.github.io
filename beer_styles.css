@@ -1,0 +1,101 @@
+
+#background_img {
+	background-image: url("wheat.jpg");
+	background-repeat: no-repeat;
+	background-position: center, center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+.chocolate_stout {
+	background-image: url("chocolate_stout.png");
+	background-repeat: no-repeat;
+	background-position: center, center;
+	background-attachment: fixed;
+	text-align: center;
+	background-size: cover;
+	color: white;
+}
+
+.chocolate_table {
+	border: 3px solid white;
+	border-radius: 15px;
+	padding: 3px;
+	margin: auto;
+	font-weight: bold;
+	background: none;
+}
+
+.beer_table {
+	border: 3px solid black;
+	border-radius: 15px;
+	padding: 3px;
+	margin: auto;
+	font-weight: bold;
+	background: orange;
+}
+
+.beer_h1 {
+	font-family: "American Typewriter", Zapfino, Tahoma, Verdana;
+	font-weight: bold;
+	text-align: center;
+}
+
+.beer_h3, .beer_h4 {
+	font-family: "American Typewriter", Verdana;
+	text-align: center;
+	padding-left:140px;
+	padding-right:140px;
+
+}
+
+.beer_img {
+	border: solid black 3px;
+	margin: auto;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.beer_p {
+	text-align: center;
+	font-family: Verdana;
+	padding-left: 140px;
+	padding-right:140px;
+}
+
+.beer_a:visited {
+	color: #2b4a37;
+}
+
+.beer_a {
+	font-weight: bold;
+}
+
+#recipe_table {
+	text-align: center;
+}
+
+
+#witbier {
+	width: 200px;
+	border: solid black 2px;
+}
+
+.beer_footer {
+	font-size: .7em;
+}
+
+
+@media only screen and (max-width: 768px) {
+ 	body {
+ 		font-size: 1.2em;
+ 	}
+
+ 	table, thead, tbody, th, td, tr {
+ 		display: block;
+ 		margin: auto;
+ 		text-align: center;
+ 		font-size: 1.0em;
+}
+
