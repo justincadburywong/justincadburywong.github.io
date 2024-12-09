@@ -1,6 +1,37 @@
-<!DOCTYPE html>
+)<!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      function getCookie(name) {
+        match = document.cookie.match(new RegExp(name + '=([^;]+)'));
+        if (match) return match[1];
+      }
+
+      function getRandomInt(min, max) {
+        const minCeiled = Math.ceil(min);
+        const maxFloored = Math.floor(max);
+        return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
+      }
+
+      if (getCookie('vid')==null){
+        document.cookie = "vid=" + getRandomInt(100000000,999999999)
+        console.log("Cookie created")
+      }
+      else {
+        var vid = getCookie('vid');
+        console.log("Cookie exists")
+      }
+      console.log(document.cookie)
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTPF4VW8MS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HTPF4VW8MS', {vid: vid});
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
