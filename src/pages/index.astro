@@ -1,0 +1,877 @@
+---
+const impactMetrics = [
+  {
+    value: "35%",
+    label: "Escalation rate reduction",
+    theme: "Escalations",
+    driver: "Recurring complex issues were analyzed as product and process signals, then translated into clearer support paths and feedback loops.",
+    detail: "QoQ reduction from 14.2% to 9.2% by turning recurring technical pain into clearer support paths, readiness loops, and product feedback.",
+  },
+  {
+    value: "8.3%",
+    label: "Contact rate reduction",
+    theme: "Contact Rate",
+    driver: "Self-service, docs, intake, and support readiness work helped customers avoid opening cases even as the account base grew.",
+    detail: "QoQ reduction despite 13% account growth, showing customer issues were being prevented rather than merely handled faster.",
+  },
+  {
+    value: "21%",
+    label: "Touches-per-case reduction",
+    theme: "Case Effort",
+    driver: "Better initial context, sharper troubleshooting guidance, and stronger internal enablement reduced unnecessary back-and-forth.",
+    detail: "Reduced back-and-forth by improving intake, troubleshooting guidance, internal enablement, and support-facing product context.",
+  },
+  {
+    value: "325",
+    label: "Cases prevented",
+    theme: "Self-Help",
+    driver: "High-volume questions were turned into guided paths, self-serve troubleshooting content, and clearer customer-facing next steps.",
+    detail: "Self-help and guided troubleshooting work prevented hundreds of support cases in one quarter.",
+  },
+  {
+    value: "600+",
+    label: "Launches evaluated",
+    theme: "Launch Readiness",
+    driver: "Product launches were reviewed for support scope, escalation paths, docs, taxonomy, tooling, and customer-facing clarity.",
+    detail: "Reviewed Zero Trust / Cloudflare One launches for support readiness across technical support, product, engineering, docs, and GTM.",
+  },
+];
+
+const stories = [
+  {
+    eyebrow: "Customer Friction",
+    title: "Turning repeated escalations into supportable product systems",
+    summary:
+      "Complex Zero Trust issues often arrived as urgent, high-touch cases because the failure modes were hard for customers and support teams to interpret. I used escalation patterns, case taxonomy, and technical troubleshooting gaps to identify what needed clearer diagnostics, better public docs, stronger runbooks, or product changes.",
+    outcome: "Reduced escalations, faster resolution paths, and clearer feedback loops for Product and Engineering.",
+  },
+  {
+    eyebrow: "Launch Readiness",
+    title: "Making technical product launches easier to support",
+    summary:
+      "For hundreds of launches, I evaluated whether Support had the context, troubleshooting steps, escalation paths, customer-facing language, and taxonomy needed before customers felt the rough edges.",
+    outcome: "Support readiness became a launch quality signal, not an afterthought.",
+  },
+  {
+    eyebrow: "Self-Service",
+    title: "Moving answers closer to customers",
+    summary:
+      "I converted internal troubleshooting knowledge into safer public guidance where appropriate, including centralized <a href=\"https://developers.cloudflare.com/cloudflare-one/troubleshooting/\" target=\"_blank\" rel=\"noopener noreferrer\">Cloudflare One support content</a>, product-specific troubleshooting paths, and clearer diagnostic collection steps.",
+    outcome: "More customers could resolve issues without waiting for a case, while Support received better initial context when help was needed.",
+  },
+  {
+    eyebrow: "Operational Intelligence",
+    title: "Making case data useful for decisions",
+    summary:
+      "I maintained and evolved Zero Trust taxonomy so support cases could reveal product pain, documentation gaps, training needs, and high-friction workflows rather than becoming a pile of disconnected tickets.",
+    outcome: "Leaders could see patterns, prioritize fixes, and measure whether supportability work was moving customer outcomes.",
+  },
+];
+
+const systems = [
+  "Supportability strategy",
+  "Technical launch readiness",
+  "Incident and escalation pattern analysis",
+  "Customer self-service design",
+  "Docs and runbook programs",
+  "Case taxonomy and operational metrics",
+  "Cross-functional Product / Eng / Support rituals",
+  "Internal tooling and AI-assisted support workflows",
+];
+
+const personal = [
+  {
+    title: "Epicer",
+    url: "https://github.com/justincadburywong/Epicer",
+    text: "A Rails 8 + Hotwire recipe system I built for my own kitchen: URL import, OCR from cookbook photos, tags, search, ratings, notes, serving scaling, uploads, and print-friendly cooking. Self-hosted behind Cloudflare Tunnel.",
+  },
+  {
+    title: "Photos",
+    url: "https://github.com/justincadburywong/photos-rails-8",
+    text: "A Rails 8 + Hotwire app I built to organize old photos not saved to the cloud: tagging, search, albums, and local-first storage. Self-hosted behind Cloudflare Tunnel.",
+  },
+  {
+    title: "COVID-Informed",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9707711/",
+    text: "Collaborated with UCSF faculty on an NIH-funded RADx-UP study delivering culturally and linguistically appropriate COVID-19 education to Chinese, Hmong, and Vietnamese communities across California. Co-authored findings published in the American Journal of Public Health.",
+  },
+  {
+    title: "Maker",
+    text: "I cook most meals at home, brew beer, ferment pickles and kimchee, and make kombucha. Weekends are for hiking, car mods, home projects, and tinkering. I like understanding how things work by getting close enough to improve them.",
+  },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Justin Cadbury Wong is a Technical Program Manager focused on supportability, customer experience, and complex technical products."
+    />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>Justin Cadbury Wong | Technical Program Manager</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Justin Cadbury Wong home">Justin Cadbury Wong</a>
+      <nav aria-label="Primary navigation">
+        <a href="#impact">Impact</a>
+        <a href="#stories">Stories</a>
+        <a href="#systems">Systems</a>
+        <a href="#builder">Builder</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="kicker">Technical Program Manager · Supportability · Customer Experience</p>
+          <h1>I make technical products easier to support.</h1>
+          <p class="lede">
+            I spent five years improving Cloudflare One / Zero Trust supportability by connecting customer pain,
+            support operations, product readiness, documentation, tooling, and engineering feedback loops.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#impact">Explore impact</a>
+            <a class="button secondary" href="#contact">Recruiting contact</a>
+          </div>
+        </div>
+        <aside class="portrait-panel" aria-label="Justin Cadbury Wong portrait and summary">
+          <img src="/images/justin-portrait.jpg" alt="Justin Cadbury Wong" />
+          <div>
+            <p class="availability">Open to roles in Operations, Technical Program Management, and Program Management</p>
+            <p>San Francisco Bay Area · Enterprise SaaS · Security · Infrastructure · Developer platforms</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="metrics-band" id="impact" aria-labelledby="impact-title">
+        <div class="section-intro">
+          <p class="kicker">Measured Outcomes</p>
+          <h2 id="impact-title">Supportability work that moved customer-facing KPIs.</h2>
+          <p>
+            The strongest programs did more than process cases. They prevented contacts, reduced escalations,
+            shortened resolution paths, and made technical products feel less opaque to customers.
+          </p>
+        </div>
+        <div class="metric-grid">
+          {impactMetrics.map((metric, index) => (
+            <button
+              class:list={["metric-card", { active: index === 0 }]}
+              type="button"
+              data-metric-card
+              data-value={metric.value}
+              data-label={metric.label}
+              data-theme={metric.theme}
+              data-driver={metric.driver}
+              data-detail={metric.detail}
+            >
+              <strong>{metric.value}</strong>
+              <h3>{metric.label}</h3>
+              <p>{metric.detail}</p>
+            </button>
+          ))}
+        </div>
+        <aside class="impact-explorer" aria-live="polite">
+          <p class="eyebrow">Impact Explorer</p>
+          <h3><span data-impact-value>{impactMetrics[0].value}</span> · <span data-impact-label>{impactMetrics[0].label}</span></h3>
+          <p data-impact-driver>{impactMetrics[0].driver}</p>
+          <p class="outcome" data-impact-detail>{impactMetrics[0].detail}</p>
+        </aside>
+      </section>
+
+      <section class="stories" id="stories" aria-labelledby="stories-title">
+        <div class="section-intro compact">
+          <p class="kicker">Case Studies</p>
+          <h2 id="stories-title">The work beneath the metrics.</h2>
+          <p>
+            These stories are intentionally anonymized and stripped of internal identifiers, customer names,
+            unreleased details, and private tooling links.
+          </p>
+        </div>
+        <div class="story-list">
+          {stories.map((story, index) => (
+            <article class="story-card">
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <div>
+                <p class="eyebrow">{story.eyebrow}</p>
+                <h3>{story.title}</h3>
+                <p set:html={story.summary} />
+                <p class="outcome">{story.outcome}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="systems" id="systems" aria-labelledby="systems-title">
+        <div>
+          <p class="kicker">How I Operate</p>
+          <h2 id="systems-title">A TPM bridge between customer reality and product execution.</h2>
+          <p>
+            My work sits at the intersection of technical support, product operations, engineering execution,
+            launch readiness, and customer education. I’m strongest when ambiguity is high and the system has
+            to become measurable.
+          </p>
+        </div>
+        <div class="system-map" aria-label="Program capabilities">
+          {systems.map((item) => <span>{item}</span>)}
+        </div>
+      </section>
+
+      <section class="timeline" aria-labelledby="timeline-title">
+        <div class="section-intro compact">
+          <p class="kicker">2018-2026</p>
+          <h2 id="timeline-title">Eight years of supportability growth.</h2>
+        </div>
+        <ol>
+          <li>
+            <time>2018-2021</time>
+            <p>Technical Support Engineer resolving complex networking issues across DNS, SSL/TLS, CDN, and L3/L4 infrastructure. Managed escalations end-to-end, partnered with Engineering on root-cause analysis, and mentored 10+ team members — building the foundation of product and support knowledge that later defined Zero Trust supportability programs.</p>
+          </li>
+          <li>
+            <time>2021-2022</time>
+            <p>Built the foundation: runbooks, docs fixes, support scope, macros, onboarding improvements, and early Zero Trust supportability programs.</p>
+          </li>
+          <li>
+            <time>2023</time>
+            <p>Scaled GTM readiness, self-help flows, category hygiene, and recurring product/support collaboration for rapidly expanding technical surfaces.</p>
+          </li>
+          <li>
+            <time>2024</time>
+            <p>Deepened operational intelligence across taxonomy, tooling needs, product feedback, and support readiness for Cloudflare One growth.</p>
+          </li>
+          <li>
+            <time>2025-2026</time>
+            <p>Focused on KPI movement: escalation reduction, contact prevention, support enablement, centralized troubleshooting, AI-assisted workflows, and executive reporting.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="builder" id="builder" aria-labelledby="builder-title">
+        <div class="section-intro">
+          <p class="kicker">Beyond Work</p>
+          <h2 id="builder-title">I build systems because I’m curious about how life works.</h2>
+          <p>
+            The same instincts that help me untangle product operations show up in my kitchen, garage, travel notes,
+            and weekend projects. I like making useful things, then improving them through real use.
+          </p>
+        </div>
+        <div class="personal-grid">
+          {personal.map((item) => (
+            <article>
+              {item.url ? <h3><a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a></h3> : <h3>{item.title}</h3>}
+              <p>{item.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="kicker">Open to Opportunities</p>
+          <h2 id="contact-title">Let’s talk about technical programs that improve customer outcomes.</h2>
+          <p>
+            I’m exploring roles in Operations, Technical Program Management, and Program Management,
+            especially around technical products, enterprise SaaS, security, infrastructure, and customer experience.
+          </p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:justincadburywong@gmail.com">justincadburywong@gmail.com</a>
+          <a href="https://www.linkedin.com/in/justin-cadbury-wong">LinkedIn</a>
+          <a href="https://github.com/justincadburywong">GitHub</a>
+          <a href="/JustinWongResume202605.pdf" download>Resume</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
+<script>
+  const cards = Array.from(document.querySelectorAll("[data-metric-card]"));
+  const value = document.querySelector("[data-impact-value]");
+  const label = document.querySelector("[data-impact-label]");
+  const driver = document.querySelector("[data-impact-driver]");
+  const detail = document.querySelector("[data-impact-detail]");
+
+  cards.forEach((card) => {
+    card.addEventListener("click", () => {
+      cards.forEach((item) => item.classList.remove("active"));
+      card.classList.add("active");
+
+      if (value) value.textContent = card.dataset.value || "";
+      if (label) label.textContent = card.dataset.label || "";
+      if (driver) driver.textContent = card.dataset.driver || "";
+      if (detail) detail.textContent = card.dataset.detail || "";
+    });
+  });
+</script>
+
+<style>
+  :root {
+    color-scheme: light dark;
+    --ink: #1B3C53;
+    --muted: #456882;
+    --paper: #F2F4F6;
+    --panel: #FFFFFF;
+    --line: #D6DBE0;
+    --forest: #234C6A;
+    --clay: #456882;
+    --gold: #1B3C53;
+    --blue: #456882;
+    --sage: #E5E9EC;
+    --shadow: 0 24px 80px rgba(27, 60, 83, 0.1);
+    font-family:
+      Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      --ink: #E3E3E3;
+      --muted: #8AA0B0;
+      --paper: #0F1A24;
+      --panel: #1B3C53;
+      --line: #234C6A;
+      --forest: #456882;
+      --clay: #8AA0B0;
+      --gold: #E3E3E3;
+      --blue: #8AA0B0;
+      --sage: #132433;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.4);
+    }
+
+    body::before {
+      background:
+        linear-gradient(120deg, rgba(69, 104, 130, 0.15), transparent 38%),
+        linear-gradient(300deg, rgba(69, 104, 130, 0.08), transparent 42%);
+    }
+
+    .site-header {
+      background: rgba(15, 26, 36, 0.92);
+    }
+
+    .lede {
+      color: var(--muted);
+    }
+
+    .portrait-panel {
+      background: var(--panel);
+    }
+
+    .story-card {
+      background: var(--panel);
+    }
+
+    .system-map span {
+      background: var(--panel);
+      border-color: var(--line);
+    }
+
+    .personal-grid article {
+      background: var(--panel);
+    }
+
+    .builder {
+      background: var(--paper);
+    }
+
+    .button.secondary {
+      background: rgba(27, 60, 83, 0.85);
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+  }
+
+    body::before {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    content: "";
+    background:
+      linear-gradient(120deg, rgba(35, 76, 106, 0.06), transparent 38%),
+      linear-gradient(300deg, rgba(69, 104, 130, 0.06), transparent 42%);
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 18px clamp(18px, 4vw, 56px);
+    border-bottom: 1px solid rgba(35, 76, 106, 0.12);
+    background: rgba(242, 244, 246, 0.88);
+    backdrop-filter: blur(18px);
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--forest);
+    border-radius: 999px;
+    padding: 8px 16px;
+    color: var(--forest);
+    font-weight: 800;
+    font-size: 0.95rem;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px 18px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: var(--forest);
+  }
+
+  main {
+    overflow: hidden;
+  }
+
+  section {
+    padding: clamp(56px, 9vw, 118px) clamp(18px, 5vw, 72px);
+  }
+
+  .hero {
+    display: grid;
+    min-height: calc(100vh - 82px);
+    align-items: center;
+    gap: clamp(32px, 7vw, 92px);
+    grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.62fr);
+  }
+
+  .hero-copy,
+  .section-intro,
+  .systems > div:first-child,
+  .contact > div:first-child {
+    max-width: 820px;
+  }
+
+  .kicker,
+  .eyebrow {
+    margin: 0 0 14px;
+    color: var(--clay);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin-top: 0;
+  }
+
+  h1 {
+    max-width: 980px;
+    margin-bottom: 24px;
+    font-size: clamp(3rem, 6.6vw, 6.5rem);
+    line-height: 0.94;
+  }
+
+  h2 {
+    margin-bottom: 18px;
+    font-size: clamp(2.1rem, 5vw, 4.6rem);
+    line-height: 0.96;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+    font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+    line-height: 1.08;
+  }
+
+  p {
+    color: var(--muted);
+    font-size: 1.03rem;
+    line-height: 1.65;
+  }
+
+  .lede {
+    max-width: 720px;
+    color: var(--muted);
+    font-size: clamp(1.16rem, 2vw, 1.38rem);
+  }
+
+  .hero-actions,
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+  }
+
+  .button,
+  .contact-links a {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    border: 1px solid var(--forest);
+    border-radius: 999px;
+    font-weight: 750;
+    text-decoration: none;
+  }
+
+  .button.primary {
+    background: var(--forest);
+    color: white;
+  }
+
+  .button.secondary {
+    background: rgba(255, 255, 255, 0.7);
+    color: var(--forest);
+  }
+
+  .portrait-panel {
+    display: grid;
+    gap: 18px;
+    align-self: center;
+    padding: 14px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+
+  .portrait-panel img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    border-radius: 6px;
+    object-fit: cover;
+    object-position: center 28%;
+  }
+
+  .portrait-panel div {
+    padding: 6px 6px 12px;
+  }
+
+  .portrait-panel p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+  }
+
+  .portrait-panel .availability {
+    margin-bottom: 6px;
+    color: var(--ink);
+    font-weight: 800;
+  }
+
+  .metrics-band {
+    background: var(--forest);
+    color: white;
+  }
+
+  .metrics-band p,
+  .metrics-band .kicker {
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  .metrics-band .kicker {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .metric-grid {
+    display: grid;
+    gap: 14px;
+    margin-top: 42px;
+    grid-template-columns: repeat(5, minmax(180px, 1fr));
+  }
+
+  .metric-card {
+    appearance: none;
+    text-align: left;
+    min-height: 280px;
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.07);
+    color: inherit;
+    cursor: pointer;
+    transition:
+      background 180ms ease,
+      border-color 180ms ease,
+      transform 180ms ease;
+  }
+
+  .metric-card:hover,
+  .metric-card.active {
+    border-color: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.13);
+    transform: translateY(-2px);
+  }
+
+  .metric-card:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.7);
+    outline-offset: 4px;
+  }
+
+  .metric-card strong {
+    display: block;
+    margin-bottom: 44px;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: clamp(2.5rem, 5vw, 4.7rem);
+    line-height: 1;
+  }
+
+  .metric-card h3 {
+    color: white;
+  }
+
+  .metric-card p {
+    font-size: 0.95rem;
+  }
+
+  .impact-explorer {
+    display: grid;
+    gap: 4px;
+    max-width: 920px;
+    margin-top: 22px;
+    padding: clamp(22px, 3vw, 34px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.18);
+  }
+
+  .impact-explorer h3 {
+    margin-bottom: 8px;
+    color: white;
+  }
+
+  .impact-explorer .outcome {
+    margin: 10px 0 0;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 800;
+  }
+
+  .compact {
+    max-width: 720px;
+  }
+
+  .story-list {
+    display: grid;
+    gap: 18px;
+    margin-top: 38px;
+  }
+
+  .story-card {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 74px minmax(0, 1fr);
+    padding: clamp(22px, 4vw, 36px);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--panel);
+  }
+
+  .story-card > span {
+    color: var(--gold);
+    font-size: 2.2rem;
+    font-weight: 900;
+  }
+
+  .story-card .outcome {
+    margin: 18px 0 0;
+    color: var(--forest);
+    font-weight: 800;
+  }
+
+  .systems {
+    display: grid;
+    align-items: start;
+    gap: clamp(32px, 6vw, 80px);
+    grid-template-columns: 0.9fr 1fr;
+    background: var(--sage);
+  }
+
+  .system-map {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .system-map span {
+    min-height: 88px;
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--panel);
+    color: var(--forest);
+    font-weight: 800;
+  }
+
+  .timeline ol {
+    display: grid;
+    gap: 16px;
+    padding: 0;
+    margin: 36px 0 0;
+    list-style: none;
+  }
+
+  .timeline li {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: 140px minmax(0, 1fr);
+    padding: 22px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .timeline time {
+    color: var(--blue);
+    font-weight: 900;
+  }
+
+  .timeline p {
+    margin-bottom: 0;
+  }
+
+  .builder {
+    background: var(--paper);
+  }
+
+  .personal-grid {
+    display: grid;
+    gap: 16px;
+    margin-top: 42px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .personal-grid article {
+    min-height: 250px;
+    padding: 24px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--panel);
+  }
+
+  .personal-grid h3 {
+    color: var(--forest);
+  }
+
+  .personal-grid h3 a:hover {
+    text-decoration: underline;
+  }
+
+  .contact {
+    display: grid;
+    align-items: center;
+    gap: 36px;
+    grid-template-columns: 1fr 0.78fr;
+    background: var(--forest);
+    color: white;
+  }
+
+  .contact p {
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  .contact .kicker {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .contact-links {
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  .contact-links a {
+    border-color: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+  }
+
+  @media (max-width: 1120px) {
+    .hero,
+    .systems,
+    .contact {
+      grid-template-columns: 1fr;
+    }
+
+    .portrait-panel {
+      max-width: 520px;
+    }
+
+    .metric-grid,
+    .personal-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-links {
+      justify-content: flex-start;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .site-header {
+      align-items: flex-start;
+    }
+
+    nav {
+      max-width: 250px;
+    }
+
+    .hero {
+      min-height: auto;
+      padding-top: 46px;
+    }
+
+    .metric-grid,
+    .personal-grid,
+    .system-map {
+      grid-template-columns: 1fr;
+    }
+
+    .metric-card,
+    .personal-grid article {
+      min-height: 0;
+    }
+
+    .story-card,
+    .timeline li {
+      grid-template-columns: 1fr;
+    }
+
+    .story-card > span {
+      font-size: 1.4rem;
+    }
+  }
+</style>
